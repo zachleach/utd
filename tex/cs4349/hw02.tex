@@ -5,7 +5,11 @@
 \section[Problem 1]{Are either $\lceil \lg n \rceil!$ or $\lceil \lg \lg n \rceil!$ polynomially bounded?}
 Polynomially bounded means $f_n = O(n^k)$ for some constant $k$ (e.g., whether $f_n \leq c \cdot n^k$ for constants $c$ and $k$ as $n$ approaches $\infty$). 
 
-Therefore, in essence, this problem translates to: verify whether $\lceil \lg n \rceil ! \leq c \cdot n^k$.
+Therefore, this problem is basically asking you to verify
+\begin{enumerate}
+	\item $\lceil \lg n \rceil ! \leq c \cdot n^k$.
+	\item $\lceil \lg \lg n \rceil ! \leq c \cdot n^k$.
+\end{enumerate}
 
 % problem 2
 \section[Problem 2]{Use induction to prove $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$; where $F_i = F_{i-2} + F_{i-1}$, and $\phi$ is the golden ratio $\frac{1 + \sqrt{5}}{2}$.}
