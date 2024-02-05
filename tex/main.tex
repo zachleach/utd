@@ -10,36 +10,36 @@
 
 \begin{document}
 % title
-\frontmatter
-\thispagestyle{empty}
-\pdfbookmark[0]{Title}{title}
-\titleZ
-\cleardoublepage
+%\frontmatter
+%\thispagestyle{empty}
+%\pdfbookmark[0]{Title}{title}
+%\titleZ
+%\cleardoublepage
 
 % toc
-\newgeometry{vmargin=84pt,hmargin=84pt,footskip=48pt} % increase table of contents 
-\setcounter{tocdepth}{1}
-\pdfbookmark[0]{Table of contents}{toc}
-\tableofcontents*
-\restoregeometry % restore geometry
+%\newgeometry{vmargin=84pt,hmargin=84pt,footskip=48pt} % increase table of contents 
+%\setcounter{tocdepth}{1}
+%\pdfbookmark[0]{Table of contents}{toc}
+%\tableofcontents*
+%\restoregeometry % restore geometry
 
 % additional main formatting
-\mainmatter
-\pagenumbering{arabic}
-\setcounter{page}{1}
+%\mainmatter
+%\pagenumbering{arabic}
+%\setcounter{page}{1}
 \newcommand{\bb}[1] {\textbf{#1}}
 \newcommand{\ii}[1] {\textit{#1}}
 \newcommand{\co}[1] {\texttt{#1}}
 
 % preface
-\pdfbookmark[0]{Preface}{preface}
-\include{preface}
+%\pdfbookmark[0]{Preface}{preface}
+%\include{preface}
 
 % content
 \include{body}
 
 % end matter
-\cleardoublepage
-\phantomsection
-\cleardoublepage
+%\cleardoublepage
+%\phantomsection
+%\cleardoublepage
 \end{document}
