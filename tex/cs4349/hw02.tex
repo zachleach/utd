@@ -2,7 +2,7 @@
 
 % problem 1
 \section[Problem 1]{Are either $\lceil \lg n \rceil!$ or $\lceil \lg \lg n \rceil!$ polynomially bounded?}
-Polynomially bounded means
+Polynomially bounded means that $f_n = O(n^k)$ for some constant $k$.
 
 % problem 2
 \section[Problem 2]{Use induction to prove $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$; where $F_i = F_{i-2} + F_{i-1}$, and $\phi$ is the golden ratio $\frac{1 + \sqrt{5}}{2}$.}
@@ -18,7 +18,6 @@ Polynomially bounded means
 \begin{center}
 	\begin{tabular}{cc|c|c|c|c|c}
 		$A$ & $B$ & $O$ & $o$ & $\Omega$ & $\omega$ & $\Theta$ \\ \hline
-
 		$\lg^k n$ & $n^{\epsilon}$ & yes & yes & yes & yes & yes \\ \hline
 		$n^k$ & $c^n$ & yes & yes & yes & yes & yes \\ \hline
 		$\sqrt{n}$ & $n^{\sin n}$ & yes & yes & yes & yes & yes \\ \hline
