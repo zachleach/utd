@@ -2,9 +2,10 @@
 
 To prove by induction, write out the expressions $f_n$ and $f_{n + 1}$ (note: $f_{n + 1}$ is the same as $f_n$, but with $(n + 1)$ substituted everywhere in place of $n$). Next, if applicable, re-write the expression $f_{n + 1}$ in terms of $f_n$ then perform algebraic manipulations on the expression until you reach some variation of $f_{n + 1} = f_{n + 1}$.  Lastly, show that the expression $f_c$ also holds for some constant $c$. The algebra is called "the inductive step", and the calculation for on the constant is called "the base case".
 
-In this problem, the expression to prove is $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$, where $\phi = \frac{1 + \sqrt{5}}{\sqrt{5}}$. Start by demonstrating the expression holds for constants $c = 0, c = 1$ (e.g., the "base case").
-
+In this problem, the expression to prove is $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$, where $\phi = \frac{1 + \sqrt{5}}{\sqrt{5}}$. Start by demonstrating the expression holds for constants $c = 0, c = 1$ (e.g., the "base case"). 
 \begin{align}
 	F_0 &= \frac{\phi^0 - \hat{\phi}^0}{\sqrt{5}} = \frac{1 - 1}{\sqrt{5}} \\[16pt]
-		&= 0
+		&= 0 
 \end{align}
+
+After proving the expression holds for some base cases $F_0$ and $F_1$, the next step is algebra. Setup the expression $F{n + 1}$ in terms of $F_n$, then solve (see below).
