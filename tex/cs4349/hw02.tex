@@ -9,7 +9,7 @@ Polynomially bounded means $f_n = O(n^k)$ for some constant $k$ (e.g., whether $
 	\lg (2^a) ! & \leq c \cdot (2^a)^k \\
 	a! & \leq c \cdot 2^{ak}
 \end{align*}
-$a! \leq c \cdot 2^{ak}$ is a contradiction, as the factorial function $a!$ is not exponentially bounded. Therefore, $\lceil \lg n \rceil!$ is not polynomially bounded (via proof by contradiction). For the second function $\lceil \lg \lg n \rceil!$, without loss of generality, assume $n = 2^{2^a}$ (where $a \in \mathbb{N}$).
+The statement $a! \leq c \cdot 2^{ak}$ is a contradiction, as the factorial function $a!$ is not exponentially bounded. Therefore, $\lceil \lg n \rceil!$ is not polynomially bounded (via proof by contradiction). For the second function $\lceil \lg \lg n \rceil!$, without loss of generality, assume $n = 2^{2^a}$ (where $a \in \mathbb{N}$).
 
 % problem 2
 \section[Problem 2]{Use induction to prove $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$; where $F_i = F_{i-2} + F_{i-1}$, and $\phi$ is the golden ratio $\frac{1 + \sqrt{5}}{2}$.}
