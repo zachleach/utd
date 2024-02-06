@@ -7,8 +7,6 @@ $f_n = O(g_n)$ means		$f_n \leq c \cdot g_n$,
 $f_n = o(g_n)$ means		$f_n < c \cdot g_n$, and
 $f_n = \Theta(g_n)$ means	$f_n == c \cdot g_n$. 
 
-\ul{To demonstrate whether something is big-something of something, isolate the constant $c$ in the equaility and observe whether it holds.} Also note that big-$\Omega$ precludes little-$o$ and big-$O$ precludes little-$\omega$ (e.g., if $f_n = O(g_n)$, then $f_n = \omega(g_n)$ is false, and vice-versa).
-
 \begin{center}
 	\begin{tabular}{lcc|c|c|c|c|c}
 		& $A$ & $B$ & $O$ & $o$ & $\Omega$ & $\omega$ & $\Theta$ \\ \hline
@@ -20,3 +18,5 @@ $f_n = \Theta(g_n)$ means	$f_n == c \cdot g_n$.
 		f. & $\lg(n!)$ & $\lg(n^n)$		& yes &  & yes &  & yes 
 	\end{tabular}
 \end{center}
+
+\ul{To demonstrate whether something is big-something of something, isolate the constant $c$ in the equaility and observe whether it holds.} Also note that big-$\Omega$ precludes little-$o$ and big-$O$ precludes little-$\omega$ (e.g., if $f_n = O(g_n)$, then $f_n = \omega(g_n)$ is false, and vice-versa).
