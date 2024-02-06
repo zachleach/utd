@@ -1,5 +1,5 @@
 \section[Problem 6]{Order the following functions such that $f_1 = \Omega(f_2), f_2 = \Omega(f_3), ..., f_{29} = \Omega(f_{30})$, and partition them into equivalence classes such that each function is big-$\Theta$ of each other.}
-Note that $f_1 = \Omega(f_2)$ basically means $f_1 \leq f_2$ (in terms of growth). Therefore, the order of functions $f_1 = \Omega(f_2), f_2 = \Omega(f_3), ..., f_{29} = \Omega(f_{30})$ is as follows:
+Note that $f_1 = \Omega(f_2)$ means $f_1 \leq f_2$ (in terms of growth). Therefore, the order of functions $f_1 = \Omega(f_2), f_2 = \Omega(f_3), ..., f_{29} = \Omega(f_{30})$ is:
 
 $2^{2^{n + 1}} = \Omega \left(2^{2^n} \right), $
 $2^{2^n} = \Omega \left((n + 1)! \right), $
@@ -32,6 +32,7 @@ $\lg * (\lg n) = \Omega \left(\lg (\lg * n) \right), $
 $\lg (\lg * n) = \Omega \left(n^{\frac{1}{\lg n}} \right), $
 $n^{\frac{1}{\lg n}} = \Omega (1)$ \\
 
+Equivalence classes 
 The equivalence classes are: 
 $\left\{ n^{\lg \lg n}, \left( \lg n \right)^{\lg n} \right\}$, 
 $\left\{ n^2, 4^{\lg n} \right\}$,
