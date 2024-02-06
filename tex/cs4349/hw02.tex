@@ -5,7 +5,7 @@
 \section[Problem 1]{Are either $\lceil \lg n \rceil!$ or $\lceil \lg \lg n \rceil!$ polynomially bounded?}
 Polynomially bounded means $f_n = O(n^k)$ for some constant $k$ (e.g., whether $f_n \leq c \cdot n^k$ for constants $c$ and $k$ as $n$ approaches $\infty$). 
 
-For the first function, let $n = 2^a$ (where $a \in \mathbb{N}$). This reduces the $\lg$ and removes the ceil.
+For the first function, without loss of generality, let $n = 2^a$ (where $a \in \mathbb{N}$). This reduces the $\lg$ and removes the ceil.
 \begin{align*}
 	\lceil \lg n \rceil ! & \leq c \cdot n^k \\
 	\lg (2^a) ! & \leq c \cdot (2^a)^k \\
@@ -13,6 +13,8 @@ For the first function, let $n = 2^a$ (where $a \in \mathbb{N}$). This reduces t
 \end{align*}
 
 Which is a contradiction, as the factorial function $a!$ is not exponentially bounded. Therefore, $\lceil \lg n \rceil!$ is not polynomially bounded.
+
+For the second function, without loss of generality, let $n = 2^{2^a}$ (where $a \in \mathbb{N}$
 
 % problem 2
 \section[Problem 2]{Use induction to prove $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$; where $F_i = F_{i-2} + F_{i-1}$, and $\phi$ is the golden ratio $\frac{1 + \sqrt{5}}{2}$.}
