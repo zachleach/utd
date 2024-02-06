@@ -12,7 +12,7 @@ Polynomially bounded means $f_n = O(n^k)$ for some constant $k$ (e.g., whether $
 The statement $a! \leq c \cdot 2^{ak}$ is a contradiction, as the factorial function $a!$ is not exponentially bounded. Therefore, $\lceil \lg n \rceil!$ is not polynomially bounded (via proof by contradiction). For the second function $\lceil \lg \lg n \rceil!$, without loss of generality, assume $n = 2^{2^a}$ (where $a \in \mathbb{N}$).
 \begin{align*}
 	\lceil \lg \lg n \rceil! & \leq c \cdot n^k \\
-	\lceil \lg \lg (2^{2^a}) \rceil! & \leq c \cdot \left( 2^{2^a} \right) \\
+	\lceil \lg \lg \left( 2^{2^a} \right) \rceil! & \leq c \cdot \left( 2^{2^a} \right) \\
 \end{align*}
 
 % problem 2
