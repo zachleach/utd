@@ -16,7 +16,7 @@ if [[ -e main.tex ]]; then
 	fi
 
 	rm *.aux
-	rm *.log *.out *.toc
+	rm *.log *.out 
 
 	explorer.exe "$MAIN".pdf
 fi
