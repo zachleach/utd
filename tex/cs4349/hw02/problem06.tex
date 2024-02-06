@@ -2,5 +2,34 @@
 
 % create macro to convert list of functions into f_1 = \Omega(f_2), where f_1 is the function vertically above f_2 in the list of functions
 \begin{align*}
-	\lg (\lg ^* n)
+	2^{2^{n + 1}} &= \Omega(2^{2^n}), \\
+	2^{2^n} &= \Omega((n + 1)!), \\
+	(n + 1)! &= \Omega(n!), \\
+	n! &= \Omega(e^n), \\
+	e^n &= \Omega(n \cdot 2^n), \\
+	n \cdot 2^n &= \Omega(2^n), \\
+	2^n &= \Omega(\left( \frac{3}{2} \right)^n), \\
+	\left( \frac{3}{2} \right)^n &= \Omega(n^{\lg \lg n}), \\
+	n^{\lg \lg n} &= \Omega(\left( \lg n \right)^{\lg n}), \\
+	\left( \lg n \right)^{\lg n} &= \Omega((\lg n)!), \\
+	(\lg n)! &= \Omega(N^3), \\
+	N^3 &= \Omega(n^2), \\
+	n^2 &= \Omega(4^{\lg n}), \\
+	4^{\lg n} &= \Omega(\lg (n!)), \\
+	\lg (n!) &= \Omega(n \lg n), \\
+	n \lg n &= \Omega(2^{\lg n}), \\
+	2^{\lg n} &= \Omega(n), \\
+	n &= \Omega(\left( \sqrt{2} \right)^{\lg n}), \\
+	\left( \sqrt{2} \right)^{\lg n} &= \Omega(\sqrt{n}), \\
+	\sqrt{n} &= \Omega(2^{\sqrt{2 \lg n}}), \\
+	2^{\sqrt{2 \lg n}} &= \Omega(\lg ^2 n), \\
+	\lg ^2 n &= \Omega(\ln n), \\
+	\ln n &= \Omega(\sqrt{\lg n}), \\
+	\sqrt{\lg n} &= \Omega(\ln \ln n), \\
+	\ln \ln n &= \Omega(2^{\lg ^* n}), \\
+	2^{\lg ^* n} &= \Omega(\lg ^* n), \\
+	\lg ^* n &= \Omega(\lg * (\lg n)), \\
+	\lg * (\lg n) &= \Omega(\lg (\lg * n)), \\
+	\lg (\lg * n) &= \Omega(n^{\frac{1}{\lg n}}), \\
+	n^{\frac{1}{\lg n}}
 \end{align*}
