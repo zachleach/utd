@@ -2,5 +2,5 @@
 
 Proof by induction is used to show that an expression $f_n$ (typically a recursive function) is true; in practice, it is a two step process involving a calculation followed by a set of algebraic steps applied to the expression being proved. 
 
-To prove by induction, write out the expressions $f_n$ and $f_{n + 1}$ (note: $f_{n + 1}$ is the same as $f_n$, but with $(n + 1)$ substituted everywhere in place of $n$). Next, write out $f_{n + 1}$ to have atleast one term equivalent to $f_n$. If you can transform the expression $f_{n + 1} = f_n + \dots$
+To prove by induction, write out the expressions $f_n$ and $f_{n + 1}$ (note: $f_{n + 1}$ is the same as $f_n$, but with $(n + 1)$ substituted everywhere in place of $n$). Trying to get the LHS of the expression $f_{n + 1}$ to equal the RHS of the expression in terms of $f_n$ is called the "inductive step". After the inductive step is complete, if the expression being proved $f_c$ also holds for some constant $c$, the expression is said to be "proved by induction".
 
