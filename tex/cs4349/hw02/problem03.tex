@@ -1,10 +1,10 @@
 \section[Problem 3]{Show that $k \lg k = \Theta(n)$ implies $k = \Theta\left(\frac{n}{n \ln n}\right)$.}
 \begin{align*}
 	k \ln k &= \Theta(n) \Longrightarrow \Theta(k \ln k) = n \\
-	\ln [n] &= \Theta ( \ln [k \ln k ] )
+	\ln [n] &= \Theta ( \ln [k \ln k ] ) \\
 	&=
 	\Theta (\ln k + \ln \ln k) \\
-	&= \Theta(\ln k)
+	&= \Theta(\ln k) \\
 	n &= \Theta(k \ln k) \\
 	\frac{n}{\ln n} &= \frac{\Theta(k \ln k)}{\Theta(\ln k)} = \Theta \left( \frac{k \ln k}{\ln k} \right) = \Theta(k) \\
 	\frac{n}{\ln n} &= \Theta(k) \\
