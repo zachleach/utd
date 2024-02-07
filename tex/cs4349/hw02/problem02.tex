@@ -8,6 +8,12 @@ In this problem, the expression to prove is $F_i = \frac{\phi^i - \hat{\phi}^i}{
 		&= 0 
 \end{align}
 
+\setcounter{equation}{0}
+\begin{align}
+	F_1 &= \frac{\phi^1 - \hat{\phi}^1}{\sqrt{5}} = \frac{\frac{\left( 1 + \sqrt{5} \right)}{\sqrt{5}} + \frac{2}{\left( 1 + \sqrt{5} \right)}}{\sqrt{5}} \\
+		&= 0 
+\end{align}
+
 After showing the expression holds for some base cases $F_0$ and $F_1$, the next step is algebra. Setup the expression $F_n$ in terms of $F_{n - 1}$, then solve (see below). 
 
 \setcounter{equation}{0}
@@ -26,7 +32,7 @@ After showing the expression holds for some base cases $F_0$ and $F_1$, the next
 	F_{i + 1} &= F_{i} + F_{i - 1} \\
 	\frac{\phi^{i} - \hat{\phi}^{i}}{\sqrt{5}} 
 	&=  
-	\frac{\phi^{i - 1} - \hat{\phi}^{i - 1}}{\sqrt{5}}
+	\frac{\phi^{i - 1} - \hat{\phi}^{i - 1}}{\sqrt{5}} + 
 	\frac{\phi^{i - 2} - \hat{\phi}^{i - 2}}{\sqrt{5}} \\
 	% TODO finish the rest of the inductive step algebra
 	&=
