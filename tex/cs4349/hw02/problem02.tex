@@ -4,13 +4,10 @@ To prove by induction, write out the expressions $f_n$ and $f_{n + 1}$ (note: $f
 
 In this problem, the expression to prove is $F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}}$, where $\phi = \frac{1 + \sqrt{5}}{\sqrt{5}}$. Start by demonstrating the expression holds for constants $c = 0$ and $c = 1$.
 \begin{align*}
-	F_0 &= \frac{\phi^0 - \hat{\phi}^0}{\sqrt{5}} = \frac{1 - 1}{\sqrt{5}} \\
-		&= 0 \\
+	F_0 &= \frac{\phi^0 - \hat{\phi}^0}{\sqrt{5}} = \frac{1 - 1}{\sqrt{5}} = 0 \\
 	F_1 = \frac{\phi^1 - \hat{\phi}^1}{\sqrt{5}} &= \frac{\frac{\left( 1 + \sqrt{5} \right)}{\sqrt{5}} + \frac{2}{\left( 1 + \sqrt{5} \right)}}{\sqrt{5}} \\
 	&= 
-	\frac{\left( 1 + \sqrt{5} \right) - \left( 1 - \sqrt{5} \right)}{2 \sqrt{5}} \\
-	&=
-	1
+	\frac{\left( 1 + \sqrt{5} \right) - \left( 1 - \sqrt{5} \right)}{2 \sqrt{5}} = 1
 \end{align*}
 
 After showing the expression holds for some base cases $F_0$ and $F_1$, the next step is algebra. Setup the expression $F_n$ in terms of $F_{n - 1}$, then solve (see below). 
