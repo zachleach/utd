@@ -1,4 +1,6 @@
 \section[Problem 3]{Show that $k \lg k = \Theta(n)$ implies $k = \Theta\left(\frac{n}{\ln n}\right)$.}
+If $f_n = \Theta(g_n)$, then $\Theta(f_n) = g_n$ (by symmetric property of big-$\Theta$).
+Note the symmetric property of big-$\Theta$, that if 
 \begin{align*}
 	k \ln k &= \Theta(n) \Longrightarrow \Theta(k \ln k) = n \\
 	\ln [n] &= \Theta ( \ln [k \ln k ] ) \\
