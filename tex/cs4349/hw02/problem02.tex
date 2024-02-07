@@ -10,8 +10,11 @@ In this problem, the expression to prove is $F_i = \frac{\phi^i - \hat{\phi}^i}{
 
 \setcounter{equation}{0}
 \begin{align}
-	F_1 &= \frac{\phi^1 - \hat{\phi}^1}{\sqrt{5}} = \frac{\frac{\left( 1 + \sqrt{5} \right)}{\sqrt{5}} + \frac{2}{\left( 1 + \sqrt{5} \right)}}{\sqrt{5}} \\
-		&= 0 
+	F_1 = \frac{\phi^1 - \hat{\phi}^1}{\sqrt{5}} &= \frac{\frac{\left( 1 + \sqrt{5} \right)}{\sqrt{5}} + \frac{2}{\left( 1 + \sqrt{5} \right)}}{\sqrt{5}} \\
+	&= 
+	\frac{\left( 1 + \sqrt{5} \right) - \left( 1 - \sqrt{5} \right)}{2 \sqrt{5}} \\
+	&=
+	1
 \end{align}
 
 After showing the expression holds for some base cases $F_0$ and $F_1$, the next step is algebra. Setup the expression $F_n$ in terms of $F_{n - 1}$, then solve (see below). 
