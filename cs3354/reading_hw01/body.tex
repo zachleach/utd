@@ -4,15 +4,65 @@
 \section*{\Huge\bfseries CS 3354 Reading Activity \#1}
 
 \section{What is Software Architectural Design, and why is it important?}
+Software architectural design is the process of defining a structured solution that meets both technical and operational requirements. It involves making important decisions about the overall structure of the software, such as the relationships between components, data flow patterns, and the mechanism for communication between different parts of the system. A good software architecture helps define performance, quality, scalability, maintainability, manageability, and usability. 
+\href{https://www.netsolutions.com/insights/why-software-architecture-matters-to-build-scalable-solutions/}{$^1$}
+
+It is important because it provides a solid foundation for the software project, ensuring that the software is flexible, extensible, and can evolve as new requirements emerge. Additionally, software architecture introduces constraints on implementation and restricts design choices, reducing the complexity of a software system. 
+\href{https://www.linkedin.com/pulse/8-reasons-why-software-architecture-important-ahad-khan-csm/}{$^2$}
+
 \section{Provide the main characteristics of, and find an example for, each type of system:}
 \begin{enumerate}[a.]
-	\item Interactive system?
-	\item Event-Driven system?
-	\item Transformational system?
-	\item Object-Persistence/Database system?
+	\item Interactive system
+	\item Event-Driven system
+	\item Transformational system
+	\item Object-Persistence/Database system
 \end{enumerate}
-\section{Why do we need to perform Custom Architectural Design}
+
+\subsection{Interactive system}
+The main characteristics of an interactive system include interleaved input and output, significant human-computer interaction, and real-time feedback to the user based on their actions. Examples of interactive systems range from graphical user interfaces like Macintosh or Windows operating systems, web browsers, and Integrated Development Environments (IDEs) to specific applications such as word processors, spreadsheet software, and games. 
+\href{https://people.cs.pitt.edu/~chang/365/2petri/s2.htm}{$^1$}
+\href{https://www.encyclopedia.com/computing/news-wires-white-papers-and-books/interactive-systems}{$^2$}
+\href{https://www.geeksforgeeks.org/interactive-operating-system/}{$^3$}
+
+\subsection{Event-Driven system}
+The main characteristics of an event-driven system are loose coupling, asynchronous communication, reactivity to events. An example of an event-driven system is an e-commerce website where various events occur, such as items being added to a shopping cart, a purchase being made, or a user posting a review. Each of these actions generates an event that the system can respond to. For instance, when a customer places an order, the event is published to an event broker, which then informs the inventory service to update stock levels, the payment service to process the payment, and the shipping service to handle the delivery.
+\href{https://aws.amazon.com/event-driven-architecture/}{$^1$}
+\href{https://blog.hubspot.com/website/event-driven-architecture}{$^2$}
+
+\subsection{Transformational system}
+The main characteristics of a transformational system are input-output transformation, batch processing, deterministic processing, and limited user interaction. 
+An example of a transformational system is a compiler. A compiler takes source code written in a programming language (the input) and transforms it into machine code or bytecode (the output), which can then be executed by a computer or a virtual machine. The process is deterministic, and the interaction with the user is limited to providing the source code and receiving the compiled output. 
+\href{https://www.itma.vt.edu/courses/d4l2/lesson_2.php}{$^1$}
+\href{https://en.wikipedia.org/wiki/System}{$^2$}
+
+\subsection{Object-Persistence/Database system}
+The main characteristics of a object-persistence/database system are object lifetimes, storage and retrieval, reliability, and cross-platform access. An example of an object-persistence/database system is an object-relational database management system (ORDBMS) that stores and manages persistent data in the form of objects. For instance, a system using ORDBMS can store customer information as persistent objects, ensuring their durability and accessibility across different applications and processes
+\href{https://study.com/academy/lesson/object-persistence-definition-overview.html}{$^1$}
+\href{https://www.infoworld.com/article/2076943/object-persistence-and-java.html}{$^2$}
+\href{https://www.tutorialspoint.com/encapsulation-of-operations-and-persistence-of-objects}{$^3$}
+
+\section{Why perform Custom Architectural Design}
+It's common for a company to have a set of software that they distribute to customers. Custom architectural design allows developers to not have to write new software from scratch everytime.  
+
 \section{What is a package diagram}
+A package diagram in software engineering is a type of UML (Unified Modeling Language) diagram that depicts the organization and arrangement of various model elements, such as classes, documents, and other packages, in a hierarchical structure.
+\href{https://www.lucidchart.com/pages/uml-package-diagram}{$^1$}
+
 \section{What are software design princples? Explain each briefly.}
+\subsection{Single Responsibility (SRP)}
+\subsection{Open-Closed (OCP)}
+\subsection{Liskov Substitution (LSP)}
+\subsection{Interface Segregation (ISP)}
+\subsection{Dependency Inversion (DIP)}
+\subsection{Don't Repeat Yourself (DRY)}
+\subsection{Keep It Simple, Stupid (KISS)}
+\subsection{You Aren't Going To Need It (YAGNI)}
+\subsection{Composition Over Inheritance}
+
+\href{https://www.geeksforgeeks.org/principles-of-software-design/}{$^1$}
+\href{https://swimm.io/learn/system-design/6-software-design-principles-used-by-successful-engineers}{$^2$}
+\href{https://en.wikipedia.org/wiki/Software_architecture}{$^3$}
+
 \section{Which agile principles should be applied during Architectural Design?}
 \section{What is a MVC pattern?}
+
