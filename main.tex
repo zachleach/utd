@@ -1,0 +1,32 @@
+\include{config.tex}
+\include{titles.tex}
+
+\begin{document}
+% title page
+\frontmatter
+\thispagestyle{empty}
+\pdfbookmark[0]{Title}{title}
+\titleZ
+\cleardoublepage
+
+% table of contents
+\newgeometry{vmargin=84pt,hmargin=84pt,footskip=48pt} % increase table of contents 
+\setcounter{tocdepth}{1}
+\pdfbookmark[0]{Table of contents}{toc}
+\tableofcontents*
+\restoregeometry % restore geometry
+\mainmatter
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% preface
+\pdfbookmark[0]{Preface}{preface}
+\include{preface.tex}
+
+% body
+\include{body.tex}
+
+\cleardoublepage
+\phantomsection
+\cleardoublepage
+\end{document}
