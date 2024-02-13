@@ -14,17 +14,17 @@ Intuitively, it takes $c$ units of time to perform a given computational operati
 
 For instance, to sort $n$ integers in increasing order, the \ii{insertion sort} algorithm takes $c \cdot n^2$ units time, whereas the \ii{merge sort} takes $c \cdot n \lg n$. Comparably speaking then, the $n \lg n$ algorithm will outperform the $n^2$ algorithm for large input sizes $n$. 
 
-There's an entire mathematical notation for identifying and comparing these input-efficiency functions for algorithms, called \ii{asymptotic notation}; it's discussed at length in chapter 3.
+There's an entire mathematical notation for identifying and comparing these input-efficiency functions for algorithms, called \ii{asymptotic notation}; it's discussed at length in chapter 3. Observe following input sizes $n$ which could be completed in time $t$ for each efficiency function $f_n$:
 
 \begin{center}
 	\begin{tabular}{c|c|c|c|c|c|c|c}
 		& 1 second & 1 minute & 1 hour & 1 day & 1 month & 1 year & 1 century  \\ \hline
 		$\lg n$		& $2^{10^6}$ & $2^{10^7}$ & $2^{10^9}$  & $2^{10^{10}}$ & $2^{10^{12}}$ & $2^{10^{13}}$ & $2^{10^{15}}$ \\ \hline
 		$\sqrt{n}$	& $10^{12}$ & $10^{15}$ & $10^{19}$ & $10^{21}$ & $10^{24}$ & $10^{26}$ & $10^{30}$ \\ \hline
-		$n$			& & & & & & & \\ \hline
-		$n \lg n$	& & & & & & & \\ \hline
-		$n^2$		& & & & & & & \\ \hline
-		$n^3$		& & & & & & & \\ \hline
+		$n$			& $10^{6}$ & $10^{7}$ & $10^{9}$ & $10^{10}$ & $10^{12}$ & $10^{13}$ & $10^{15}$ \\ \hline
+		$n \lg n$	& $10^{4}$ & $10^{6}$ & $10^{8}$ & $10^{9}$ & $10^{10}$ & $10^{11}$ & $10^{13}$ \\ \hline
+		$n^2$		& $10^{3}$ & $10^{3}$ & $10^{4}$ & $10^{5}$ & $10^{6}$ & $10^{6}$ & $10^{7}$ \\ \hline
+		$n^3$		& $10^{2}$ & $10^{2}$ & $10^{3}$ & $10^{3}$ & $10^{4}$ & $10^{4}$ & $10^{5}$ \\ \hline
 		$2^n$		& & & & & & & \\ \hline
 		$n!$		& & & & & & & 
 	\end{tabular}
