@@ -1,0 +1,31 @@
+% body.tex
+% 2024.02.13, by @zachleach
+
+\section*{\Huge\bfseries Chapter 1}
+
+\section{What is an algorithm}
+An algorithm is a sequence of computational steps that transforms an input into an output, generally to solve a well-defined computational problem.
+
+\section{What is a data structure}
+Data structures are a way to store and organize data in memory to facilitate efficient access and modification (e.g., to enhance the speed of an algorithm).
+
+\section{How to quantitatively measure algorithm efficiency}
+Intuitively, it takes $c$ units of time to perform a given computational operation. Typically the number of operations required by an algorithm corresponds to the size of the input $n$; therefore, algorithmic efficiency is expressed as a function of input size. 
+
+For instance, to sort $n$ integers in increasing order, the \ii{insertion sort} algorithm takes $c \cdot n^2$ units time, whereas the \ii{merge sort} takes $c \cdot n \lg n$. Comparably speaking then, the $n \lg n$ algorithm will outperform the $n^2$ algorithm for large input sizes $n$. 
+
+There's an entire mathematical notation for identifying and comparing these input-efficiency functions for algorithms, called \ii{asymptotic notation}; it's discussed at length in chapter 3.
+
+\begin{center}
+	\begin{tabular}{c|c|c|c|c|c|c|c}
+		& 1 second & 1 minute & 1 hour & 1 day & 1 month & 1 year & 1 century  \\ \hline
+		$\lg n$		& $2^{10^6}$ & $2^{10^7}$ & $2^{10^9}$  & $2^{10^{10}}$ & $2^{10^{12}}$ & $2^{10^{13}}$ & $2^{10^{15}}$ \\ \hline
+		$\sqrt{n}$	& & & & & & & \\ \hline
+		$n$			& & & & & & & \\ \hline
+		$n \lg n$	& & & & & & & \\ \hline
+		$n^2$		& & & & & & & \\ \hline
+		$n^3$		& & & & & & & \\ \hline
+		$2^n$		& & & & & & & \\ \hline
+		$n!$		& & & & & & & 
+	\end{tabular}
+\end{center}
