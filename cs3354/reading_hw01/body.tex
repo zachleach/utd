@@ -2,6 +2,7 @@
 % 2024.02.12, by @zachleach
 
 \section*{\Huge\bfseries CS 3354 Reading Activity \#1}
+Written by Zach Leach, \today
 
 \section{What is Software Architectural Design, and why is it important?}
 Software architectural design is the process of defining a structured solution that meets both technical and operational requirements. It involves making important decisions about the overall structure of the software, such as the relationships between components, data flow patterns, and the mechanism for communication between different parts of the system. A good software architecture helps define performance, quality, scalability, maintainability, manageability, and usability. 
@@ -48,21 +49,37 @@ It's common for a company to have a set of software that they distribute to cust
 A package diagram in software engineering is a type of UML (Unified Modeling Language) diagram that depicts the organization and arrangement of various model elements, such as classes, documents, and other packages, in a hierarchical structure.
 \href{https://www.lucidchart.com/pages/uml-package-diagram}{$^1$}
 
-\section{What are software design princples? Explain each briefly.}
-\subsection{Single Responsibility (SRP)}
-\subsection{Open-Closed (OCP)}
-\subsection{Liskov Substitution (LSP)}
-\subsection{Interface Segregation (ISP)}
-\subsection{Dependency Inversion (DIP)}
-\subsection{Don't Repeat Yourself (DRY)}
-\subsection{Keep It Simple, Stupid (KISS)}
-\subsection{You Aren't Going To Need It (YAGNI)}
-\subsection{Composition Over Inheritance}
-
+\section{What are software design princples? Explain each briefly.
 \href{https://www.geeksforgeeks.org/principles-of-software-design/}{$^1$}
 \href{https://swimm.io/learn/system-design/6-software-design-principles-used-by-successful-engineers}{$^2$}
 \href{https://en.wikipedia.org/wiki/Software_architecture}{$^3$}
+}
+\subsection{Single Responsibility (SRP)}
+Classes should focus on a single task, and have only one reason to change.
+\subsection{Open-Closed (OCP)}
+Software entities should be open for extension but closed for modification.
+\subsection{Liskov Substitution (LSP)}
+Objects should be replaceable with instances of their subtypes without altering the correctness of the program.
+\subsection{Interface Segregation (ISP)}
+Many client-specific interfaces are better than one general-purpose interface.
+\subsection{Dependency Inversion (DIP)}
+High-level modules should not depend on low-level modules, and both should depend on abstractions.
+\subsection{Don't Repeat Yourself (DRY)}
+Avoid duplication to reduce maintenance and potential inconsistencies.
+\subsection{Keep It Simple, Stupid (KISS)}
+Avoid unnecessary complexity by keeping code and design simple.
+\subsection{You Aren't Going To Need It (YAGNI)}
+Deliver features that are needed instead of wasting time over-engineering, premature optimization, or anticipating future requirements.
+\subsection{Composition Over Inheritance}
+Build larger objects from smaller object components, encouraging flexibility and loose coupling instead of large complex abstraction hierarchieshierarchies.
 
 \section{Which agile principles should be applied during Architectural Design?}
-\section{What is a MVC pattern?}
+Teams that code the system design the system, pick the simplest architecture that can possibly work, system architecture role collaboration. Promoting flexibility, simplicity, and collaboration, which are essential elements for developing adaptable and effective system architectures. 
+\href{https://softwareengineering.stackexchange.com/questions/165971/how-is-architectural-design-done-in-an-agile-environment}{$^1$}
+\href{https://www.linkedin.com/advice/1/how-can-agile-principles-help-you-develop-better}{$^2$}
+\href{https://scaledagileframework.com/agile-architecture/}{$^3$}
 
+\section{What is a MVC pattern?}
+The Model-View-Controller (MVC) is an architectural design pattern that organizes an application's logic into distinct layers, each of which carries out a specific set of tasks. The layers also interact with each other to ensure that the application's functionality is delivered in a coordinated and efficient manner. Model manages data and business logic, view handles layout and display, controller routes commands to the model and view. 
+\href{https://developer.mozilla.org/en-US/docs/Glossary/MVC}{$^1$}
+\href{https://www.techtarget.com/whatis/definition/model-view-controller-MVC}{$^2$}
