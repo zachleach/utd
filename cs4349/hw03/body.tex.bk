@@ -1,0 +1,38 @@
+% body.tex
+% 2024.02.12, by @zachleach
+
+\section*{\Huge\bfseries Assignment 3}
+Written by Zach Leach, \today
+\section{Problem 1}
+
+\section{\bfseries Give asymptotic upper and lower bounds for $T(n)$ in each recurrence. Assume $T(n)$ is constant for $n \leq 2$. Make bounds as tight as possible}
+\begin{enumerate}[\bfseries a.]
+	\item $T(n) = 16	T(n/4) + n^2$
+	\item $T(n) = 7		T(n/3) + n^2$
+	\item $T(n) = 7		T(n/2) + n^2$
+	\item $T(n) = 2		T(n/4) + n^2$
+\end{enumerate}
+
+\subsection{What are asymptotic upper and lower bounds?}
+% this should be big-theta btw
+Asymptotic upper bound refers to $O(g_n)$ notation (e.g., $f_n \leq c \cdot g_n$). Asymptotic lower bound refers to $\Omega(g_n)$ notation (e.g., $f_n \geq c \cdot g_n$). 
+
+\section{Prove the substitution method that the solution to the following recurrence is $S(n) = O(n\lg^2(n))$}
+\begin{align*}
+	S(n) &= 2S(n/2) + n \lg n \\
+	S(1) &= 1
+\end{align*}
+\subsection{Substitution Method}
+
+\section{Write the pseudocode for Strassen's Algorithm.}
+\subsection{Strassen's Algorithm}
+
+\section{Draw the recursion tree and show a good asymptotic upper bound on the recurrence $T(n) = T(n/2) + T(n/3) + T(n/6) + n$.}
+\subsection{Recursion Tree}
+\subsection{Asymptotic Upper Bound}
+
+\section{Write the pseudocode for an algorithm that finds a local minimum of an array in $O(\lg n)$ time, and explain the algorithm's run time.}
+\subsection{Local Minimum}
+
+
+
