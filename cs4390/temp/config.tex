@@ -18,14 +18,16 @@
 % configure how far section numbering ("label") hangs in left margin
 \usepackage{titlesec}				
 \newlength\sectionindent
-\setlength\sectionindent{32pt}
+\setlength\sectionindent{28pt}
+\newlength\subsectionindent
+\setlength\subsectionindent{32pt}
 
 \titleformat{\section}				
 {\normalfont\Large\bfseries}{\llap{\makebox[\sectionindent][l]{\thesection\hfill}}}{0pt}{}	
 \titlespacing*{\section}{0pt}{12pt}{12pt}
 
 \titleformat{\subsection}			
-{\normalfont\bfseries}{\llap{\makebox[\sectionindent][l]{\thesubsection\hfill}}}{0pt}{}
+{\normalfont\bfseries}{\llap{\makebox[\subsectionindent][l]{\thesubsection\hfill}}}{0pt}{}
 \titlespacing*{\subsection}{0pt}{12pt}{12pt}
 
 
