@@ -1,0 +1,46 @@
+# Packet size choice tradeoffs
+
+Larger packets have smaller overhead to data ratio and are easier/faster to assemble and process. Smaller packets are more convenient to pad, have less real-time ATM aquisition delay, are less costly on packet loss / error, have less delay jitter (disorder of packet receival), and require smaller buffers for message receiving.
+
+# Data link layer responsibilities
+
+The data-link layer is responsible for sending data between two adjacent nodes in a network. It divides data received by the network layer into packets called "frames" which is passed to the physical layer as though it were sending the data directly to the other node's data-link layer. 
+
+# Frame acknowledgement strategies
+The data-link layer provides mechanisms for data transmission of varying reliability, acknowledging whether frames are received as well as whether they contain errors. 
+
+### Unacknowledged connectionless
+
+Fast, low quality, data transmission. Destination node doesn't message the sender that the data was received (e.g., if frames were lost, no correction is attempted). Good on secure networks where packet loss and transmission errors are uncommon (LAN), and for real-time communication applications where data wouldn't be re-sent regardless of errors.  
+
+### Acknowledged connectionless
+
+After sending a message, wait some amount of time for an acknowledgment (via some arbitrary acknowledgment mechanism). If no acknowledgment is received, assume there was an error in transmission and send the frame again. Good on wireless networks where errors in transmission are frequent.
+
+### Acknowledged Connection-oriented
+
+Most reliable and secure data transmission. Establish a dedicated connection before transmission, and release it once done. Guarantees exactly one frame is delivered to the destination node in the correct order.
+
+# Routers
+
+Routers consist of of two physical and data-link layers bridged by a common network layer which handles the receival of incoming data and then the transmission of outgoing data (e.g., physical --> data link --> network --> data link --> physical). 
+
+# Frame transfer error resolution
+
+How can the destination node know whether message bits are in the correct order? If the acknowledgement is sent but lost in transmission, how can the destination node not receive another data frame? (If no acknowledgment is received by the sender, it assumes error then sends another message. In acknowledged connection-oriented, exactly one message is supposed to be sent.)?
+
+The data-link layer must be able to identify frames within the bits received by the physical layer, recognize errors, and control 
+
+### Framing: character count method (do not use)
+
+Let the first byte in each frame indicate the number of bytes within the frame (including the count byte). This fails when there is an error on the count byte; therefore, is not used in practice.
+
+### Framing: byte stuffing (most prevalent in industry)
+
+Let frames start and end with a flag byte (0111 1110). This fails when the data within the frame contains the flag's bit pattern; and is resolved by inserting the escape byte (0001 1011) everywhere there is a flag byte. 
+
+This results in the same problem, what if there is an escape-flag byte sequence in the payload? This is resolved by inserting an escape character before every escape character, in addition to inserting before every flag byte. That way, every escape character and flag literal byte pattern within the message payload is identifiable as having a preceding escape character. Therefore, the frame is identifiable as starting and ending with a lone flag byte.
+
+### Framing: bit stuffing
+
+Byte stuffing, but agnostic to character encodings like unicode that use 16-bit characters to represent data. 
