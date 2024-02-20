@@ -3,9 +3,7 @@
 
 \setcounter{section}{3}
 
-\subsection{Test}
-
-\section{Data Rate Problem}
+\subsection{Data Rate Problem}
 \ii{It is desired to send a sequence of computer screen images over optical fiber. The screen is 3840 $\times$ 2160 pixels, each pixel being 24 bits. There are 60 screen images per second. What data rate is needed?}
 \begin{align*}
 	\text{Data Rate} = \frac{\text{Number of bits}}{\text{Bits per second}}
@@ -14,7 +12,7 @@
 
 There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per image. Transmitting 60 images per second gives a data rate of data rate is $60 \cdot $ 199,065,600 = \ul{$1.194 \cdot 10^{10}$ bits per second.}
 
-\section{FDM Multiplexing Problem}
+\subsection{FDM Multiplexing Problem}
 \ii{Ten signals, each requiring 4000 Hz, are multiplexed onto a single channel using FDM. What is the minimum bandwidth required for the multiplexed channel? Assume that the guard bands are 400 Hz wide.}
 % TODO fix this shit
 \begin{align*}
@@ -25,7 +23,7 @@ There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per imag
 
 The minimum bandwidth required is $[10 \cdot 4000 \text{Hz}] + [(9) \cdot 400 \text{Hz}]$ = \ul{43,600 Hz.}
 
-\section{Analog Sampling Data Rate Problem}
+\subsection{Analog Sampling Data Rate Problem}
 \ii{A 3-kHz (analog) signal is sampled every 1 msec. What is the (minimum) data rate of a digital channel required to carry this signal? Assume that the quantization uses 256 levels.}
 \begin{align*}
 	\text{Minimum Data Rate} = 2 \times \text{Bandwidth} \times \log_2(\text{\# of Q-Levels})
@@ -37,7 +35,7 @@ The minimum data rate is $2 \times (3 \cdot 10^3) \times \log_2(256)$ = \ul{48,0
 
 
 
-\section{Network Topology Problem}
+\subsection{Network Topology Problem}
 \ii{Three packet-switching networks each contain n nodes. The first network has a star topology with a central switch, the second is a (bidirectional) ring, and the third is fully interconnected, with a wire from every node to every other node. What are the best-, average-, and worst-case transmission paths in hops?}
 
 \includegraphics[width=\the\columnwidth]{network-topologies.png}
@@ -48,7 +46,7 @@ The best-, average-, and worst-case for \ul{fully-interconnected network is 1 ho
 
 The best-, average-, and worst-case \ul{di-directional ring is 1, $n / 2$, and $n - 1$ hops}, respectively (e.g., the source and destination nodes are adjacent, the average of 1 hop and $n - 1$ hops is $~ n/2$, and at worst the message must travel across all $n - 1$ nodes, respectively).
 
-\section{Copper Wire Price Problem}
+\subsection{Copper Wire Price Problem}
 \ii{A regional telephone company has 15 million subscribers. Each of their telephones is connected to a central office by a copper twisted pair. The average length of these twisted pairs is 10 km. How much is the copper in the local loops worth? Assume that the cross section of each strand is a circle 1 mm in diameter, the density of copper is 9.0 grams/cm3, and that copper sells for \$6 per kilogram.}
 \begin{align*}
 	\text{Volume} &= \pi \cdot r^2 \cdot h \\
