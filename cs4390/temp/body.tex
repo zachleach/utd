@@ -20,18 +20,17 @@ There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per imag
 	%\text{Bandwidth} = [\text{\# of channels} \cdot \text{channel bandwidth}] + [(\text{\# of channels} - 1) \cdot \text{guard band width}]
 \end{align*}
 
-Where $B$ represents the minimum bandwidth, $c_n$ represents the number of channels, $c_b$ represents the channel bandwidth, $G_{\text{width}}$ represents the guard band width. In this case, the minimum bandwidth required is $[10 \cdot 4000 \text{Hz}] + [(9) \cdot 400 \text{Hz}]$ = \ul{43,600 Hz.}
+Where $B$ represents the minimum bandwidth, $c_n$ represents the number of channels, $c_b$ represents the channel bandwidth, and $G_{\text{width}}$ represents the guard band width. In this case, the minimum bandwidth required is $[10 \cdot 4000 \text{Hz}] + [(9) \cdot 400 \text{Hz}]$ = \ul{43,600 Hz.}
 
 \subsection{Analog sampling}
 \ii{A 3-kHz (analog) signal is sampled every 1 msec. What is the (minimum) data rate of a digital channel required to carry this signal? Assume that the quantization uses 256 levels.}
 \begin{align*}
 	\text{NEED TO FIX THIS}
 	% \text{Minimum Data Rate} = 2 \times \text{Bandwidth} \times \log_2(\text{\# of Q-Levels})
+	R = 2 \times B \times \log_2(Q)
 \end{align*}
-%\vspace{4pt}
 
-The minimum data rate is $2 \times (3 \cdot 10^3) \times \log_2(256)$ = \ul{48,000 bits per second.}
-
+Where $R$ is the data rate, $B$ is the bandwidth, and $Q$ is the quantization levels. The minimum data rate is $2 \times (3 \cdot 10^3) \times \log_2(256)$ = \ul{48,000 bits per second.}
 
 \subsection{Network topologies}
 \ii{Three packet-switching networks each contain n nodes. The first network has a star topology with a central switch, the second is a (bidirectional) ring, and the third is fully interconnected, with a wire from every node to every other node. What are the best-, average-, and worst-case transmission paths in hops?}
