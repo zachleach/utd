@@ -16,7 +16,8 @@ There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per imag
 \ii{Ten signals, each requiring 4000 Hz, are multiplexed onto a single channel using FDM. What is the minimum bandwidth required for the multiplexed channel? Assume that the guard bands are 400 Hz wide.}
 % TODO fix this shit
 \begin{align*}
-	\text{NEED TO FIX THIS}
+	%\text{NEED TO FIX THIS}
+	B = [c_n \cdot c_b] + [(c_n - 1) \cdot G_{\text{width}}]
 	%\text{Bandwidth} = [\text{\# of channels} \cdot \text{channel bandwidth}] + [(\text{\# of channels} - 1) \cdot \text{guard band width}]
 \end{align*}
 %\vspace{4pt}
@@ -43,7 +44,7 @@ The best-, average-, and worst-case for \ul{star topology with central switch is
 
 The best-, average-, and worst-case for \ul{fully-interconnected network is 1 hop} (e.g., the hop from source to destination).
 
-The best-, average-, and worst-case \ul{di-directional ring is 1, $n / 2$, and $n - 1$ hops}, respectively (e.g., the source and destination nodes are adjacent, the average of 1 hop and $n - 1$ hops is $~ n/2$, and at worst the message must travel across all $n - 1$ nodes, respectively).
+The best-, average-, and worst-case \ul{bi-directional ring is 1, $n / 2$, and $n - 1$ hops}, respectively (e.g., the source and destination nodes are adjacent, the average of 1 hop and $n - 1$ hops is $~ n/2$, and at worst the message must travel across all $n - 1$ nodes, respectively).
 
 \subsection{Copper wire price}
 \ii{A regional telephone company has 15 million subscribers. Each of their telephones is connected to a central office by a copper twisted pair. The average length of these twisted pairs is 10 km. How much is the copper in the local loops worth? Assume that the cross section of each strand is a circle 1 mm in diameter, the density of copper is 9.0 grams/cm3, and that copper sells for \$6 per kilogram.}
