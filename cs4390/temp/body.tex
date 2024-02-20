@@ -3,9 +3,11 @@
 
 \section{Data Rate Problem}
 \ii{It is desired to send a sequence of computer screen images over optical fiber. The screen is 3840 $\times$ 2160 pixels, each pixel being 24 bits. There are 60 screen images per second. What data rate is needed?}
+
 \begin{align*}
 	\text{Data Rate} = \frac{\text{Number of bits}}{\text{Bits per second}}
 \end{align*}
+\vspace{4pt}
 
 There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per image. Transmitting 60 images per second gives a data rate of data rate is $60 \cdot $ 199,065,600 = \ul{$1.194 \cdot 10^{10}$ bits per second.}
 
@@ -15,15 +17,18 @@ There are $24 \text{ bits} \cdot (3840 \times 2160)$ = 199,065,600 bits per imag
 
 \begin{align*}
 	\text{Bandwidth} = [\text{\# of channels} \cdot \text{channel bandwidth}] + [(\text{\# of channels} - 1) \cdot \text{guard band width}]
-\end{align*}\vspace{4pt}
+\end{align*}
+\vspace{4pt}
 
 The minimum bandwidth required is $[10 \cdot 4000 \text{Hz}] + [(9) \cdot 400 \text{Hz}]$ = \ul{43,600 Hz.}
 
 \section{Analog Sampling Data Rate Problem}
 \ii{A 3-kHz (analog) signal is sampled every 1 msec. What is the (minimum) data rate of a digital channel required to carry this signal? Assume that the quantization uses 256 levels.}
+
 \begin{align*}
 	\text{Minimum Data Rate} = 2 \times \text{Bandwidth} \times \log_2(\text{\# of Q-Levels})
 \end{align*}
+\vspace{4pt}
 
 The minimum data rate is $2 \times (3 \cdot 10^3) \times \log_2(256)$ = \ul{48,000 bits per second.}
 
