@@ -20,15 +20,25 @@
 \newlength\sectionindent
 \setlength\sectionindent{54pt}
 
-% configure \titleformat{\section}{}{}{}{}{}
+
 \titleformat{\section}				
-{\normalfont\Large\bfseries}{\thesection}{24pt}{}		% 24pt lines up with subsection below
-\titlespacing*{\section}{0pt}{16pt}{16pt}
+{\normalfont\Large}{\llap{\makebox[\sectionindent][l]{\thesection\hfill}}}{0pt}{}	
+\titlespacing*{\section}{0pt}{12pt}{12pt}
+
+\titleformat{\subsection}			
+{\normalfont\large}{\llap{\makebox[\sectionindent][l]{\thesubsection\hfill}}}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{12pt}
+
+
+% configure \titleformat{\section}{}{}{}{}{}
+%\titleformat{\section}				
+%{\normalfont\Large\bfseries}{\thesection}{24pt}{}		% 24pt lines up with subsection below
+%\titlespacing*{\section}{0pt}{16pt}{16pt}
 
 % configure \titleformat{\subsection}{}{}{}{}{}
-\titleformat{\subsection}			
-{\normalfont\large\bfseries}{\thesubsection}{15pt}{}	% see above
-\titlespacing*{\subsection}{0pt}{16pt}{16pt}
+%\titleformat{\subsection}			
+%{\normalfont\large\bfseries}{\thesubsection}{15pt}{}	% see above
+%\titlespacing*{\subsection}{0pt}{16pt}{16pt}
 
 % configue enumerated lists
 \usepackage[shortlabels]{enumitem}	
