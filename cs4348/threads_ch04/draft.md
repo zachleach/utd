@@ -16,22 +16,20 @@ the data section contains non-zero initialized global and static variables of a 
 
 uninitialized global and static variables are automatically initialized to zero when the program starts, and for memory efficiency are not unnecessarily included in the .data section.
 
-
 ###	what is the "text (code) section" of a process
 
 the read-only instructions of the program (loaded in memory to be executed by the CPU).
 
 for a compiled program, the text section would be the binary encoded assembly language instructions of the program.
 
-for an interpreted program, the text section would be the literal high-level instructions of the program which would get passed to the interpreter to execute in sequence.
 
+for an interpreted program, the text section would be the literal high-level instructions of the program which would get passed to the interpreter to execute in sequence.
 
 ###	as a unit of measure, what is "cpu utilization" 
 
 high cpu utilization means a processor is near or at it's maximum capacity for executing instructions, potentially leading to tasks slowing down.
 
 this is in contrast to low cpu utilization, which suggests the processor has idle resources which could be utilized for additional tasks.
-
 
 ###	what is a "thread"	
 
